@@ -1,0 +1,9 @@
+#digraph-masthead, #digraph-masthead-navbar {
+  .digraph-masthead-search {
+    .search-form {
+      font-size: 0.5em;
+      margin-top: $(spacing_base);
+      margin-bottom: 0;
+    }
+  }
+}

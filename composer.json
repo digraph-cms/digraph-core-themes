@@ -1,0 +1,12 @@
+{
+    "name": "digraphcms/digraph-core-themes",
+    "description": "Core themes for Digraph CMS.",
+    "type": "digraph-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joby Elliott",
+            "email": "joby@byjoby.com"
+        }
+    ]
+}
