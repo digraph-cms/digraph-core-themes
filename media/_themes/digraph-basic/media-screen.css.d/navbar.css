@@ -7,12 +7,14 @@
   }
 }
 
-.navbar, #digraph-navbar {
+.navbar,
+#digraph-navbar {
   background: $(color_shade);
   overflow: auto;
 }
 
-.navbar, #digraph-navbar>.digraph-area-wrapper {
+.navbar,
+#digraph-navbar>.digraph-area-wrapper {
   display: flex;
   line-height: $(line_height_compact);
 
@@ -61,5 +63,13 @@
         background-color: s-adjust($(color_accent), 50);
       }
     }
+  }
+}
+
+.navbar {
+  background: transparent;
+
+  .menuitem {
+    border-radius: $(border_radius_accent);
   }
 }
