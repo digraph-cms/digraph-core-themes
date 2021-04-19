@@ -3,7 +3,7 @@ module:
 
 theme:
   areas:
-    digraph-basic: [actionbar,masthead-navbar,meta,body,footer]
+    digraph-basic: [actionbar,masthead-navbar,breadcrumb,hero,notifications,body,footer]
   variables:
     digraph-colors-dark:
       color_background: '#111'

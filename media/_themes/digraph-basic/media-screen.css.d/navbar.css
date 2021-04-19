@@ -1,5 +1,13 @@
+.navbar,
 #digraph-navbar {
-  margin: 0;
+  background: $(color_shade);
+  overflow: auto;
+  margin: 0.25em;
+}
+
+#digraph-navbar {
+  margin-left: 0;
+  margin-right: 0;
 
   .digraph-area-wrapper {
     padding-left: $(spacing_base);
@@ -8,13 +16,7 @@
 }
 
 .navbar,
-#digraph-navbar {
-  background: $(color_shade);
-  overflow: auto;
-}
-
-.navbar,
-#digraph-navbar>.digraph-area-wrapper {
+#digraph-navbar > .digraph-area-wrapper {
   display: flex;
   line-height: $(line_height_compact);
 
@@ -22,8 +24,6 @@
     display: inline-block;
     padding: 0.5em;
     position: relative;
-    border-top-left-radius: $(border_radius_accent);
-    border-top-right-radius: $(border_radius_accent);
     background-color: $(color_shade);
     margin-left: 0.25em;
     text-decoration: none;
@@ -45,22 +45,22 @@
       color: $(color_foreground);
 
       &:before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         top: 0;
+        bottom: 0;
         left: 0;
         right: 0;
-        height: 0.5em;
-        background-color: $(color_accent);
+        border: 0.25em solid $(color_accent);
       }
 
       &.active-path:before {
-        background-color: s-adjust($(color_accent), -50);
+        border-color: s-adjust($(color_accent), -50);
       }
 
       &:hover:before {
-        background-color: s-adjust($(color_accent), 50);
+        border-color: s-adjust($(color_accent), 50);
       }
     }
   }
